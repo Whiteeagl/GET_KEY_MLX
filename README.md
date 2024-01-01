@@ -164,11 +164,11 @@ int  key_center(int  kc)
 	if (k_min_a())
 		u_write_msg_on_std(1, "a", false); // To display 'a' on stdout (GET_KEY's function)
 
-	// When 'A' pressed, you can use k_maj_a() instead
+	// When 'Ctrl + a' pressed
 	if (gk_check_combo(K_ID_A, K_ID_CTRL))
 		u_write_msg_on_std(1, "Ctrl + a", false);
 
-	// When 'Ctrl + a' pressed
+	// When 'A' pressed, you can use k_maj_a() instead
 	if (gk_check_combo(K_ID_A, K_ID_LSHIFT))
 		u_write_msg_on_std(1, "A", false);
 	
