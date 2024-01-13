@@ -6,7 +6,7 @@
 /*   By: wolf <wolf@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/29 23:26:40 by wolf              #+#    #+#             */
-/*   Updated: 2024/01/01 18:34:05 by wolf             ###   ########.fr       */
+/*   Updated: 2024/01/13 20:17:07 by wolf             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,11 +41,13 @@ int	key_center(int kc)
 
 	if (k_min_a())
 		u_write_msg_on_std(1, "a", false);
+
 	if (gk_check_combo(K_ID_A, K_ID_CTRL))
 		u_write_msg_on_std(1, "Ctrl + a", false);
+
 	if (gk_check_combo(K_ID_A, K_ID_LSHIFT))
 		u_write_msg_on_std(1, "A", false);
-		
+
 	if (k_escape())
 		free_all_memory_stuff("\nFermeture par la touche Escape");
 	return (0);

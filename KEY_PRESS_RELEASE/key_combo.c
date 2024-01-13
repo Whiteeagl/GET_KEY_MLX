@@ -6,7 +6,7 @@
 /*   By: wolf <wolf@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/31 17:01:26 by wolf              #+#    #+#             */
-/*   Updated: 2023/12/31 17:48:04 by wolf             ###   ########.fr       */
+/*   Updated: 2024/01/13 20:12:12 by wolf             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ bool	gk_check_combo(unsigned int minletter, unsigned int modifkey)
 {
 	if (gk_get_min_letter_value_by_name(minletter) AND
 		gk_get_modif_key_value_by_id(modifkey))
-		return (gk_key_release(gk_get_keycode()), true);
+		return (true);
 	return (false);
 }
 
@@ -30,7 +30,7 @@ bool	gk_check_min_letter(unsigned int minletter)
 bool	gk_check_modif_key(unsigned int modifkey)
 {
 	if (gk_get_modif_key_value_by_id(modifkey))
-		return (gk_key_release(gk_get_keycode()), true);
+		return (true);
 	return (false);
 }
 
